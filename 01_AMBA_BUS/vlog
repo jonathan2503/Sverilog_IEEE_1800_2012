@@ -1,0 +1,10 @@
+vlog AHB_master.sv 
+vlog AHB_slave.sv 
+vlog AHB_BUS.sv 
+vlog AHB_TEST.sv
+vsim work.tb
+add wave -position end  sim:/tb/CLK
+add wave -position end  sim:/tb/ADDR
+add wave -position end  sim:/tb/DATA
+add wave -position end  sim:/tb/dut/cu/ROM
+
